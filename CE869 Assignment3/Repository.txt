@@ -1,0 +1,670 @@
+Revision: 19
+Author: yyea
+Date: 01:45:23, 20 March 2014
+Message:
+totally complete the whole things.
+----
+Modified : /Assignment2/ALU/Assignment1.gise
+Modified : /Assignment2/ALU/ControlUnit.vhd
+Modified : /Assignment2/ALU/PC.vhd
+Modified : /Assignment2/ALU/ROM.vhd
+Modified : /Assignment2/ALU/TriStateBuffer.vhd
+Modified : /Assignment2/ALU/_ngo/netlist.lst
+Modified : /Assignment2/ALU/_xmsgs/bitgen.xmsgs
+Modified : /Assignment2/ALU/_xmsgs/map.xmsgs
+Modified : /Assignment2/ALU/_xmsgs/par.xmsgs
+Modified : /Assignment2/ALU/_xmsgs/xst.xmsgs
+Modified : /Assignment2/ALU/main.bgn
+Modified : /Assignment2/ALU/main.bit
+Modified : /Assignment2/ALU/main.bld
+Modified : /Assignment2/ALU/main.cmd_log
+Modified : /Assignment2/ALU/main.drc
+Modified : /Assignment2/ALU/main.ncd
+Modified : /Assignment2/ALU/main.ngc
+Modified : /Assignment2/ALU/main.ngd
+Modified : /Assignment2/ALU/main.ngr
+Modified : /Assignment2/ALU/main.pad
+Modified : /Assignment2/ALU/main.par
+Modified : /Assignment2/ALU/main.pcf
+Modified : /Assignment2/ALU/main.ptwx
+Modified : /Assignment2/ALU/main.syr
+Modified : /Assignment2/ALU/main.twr
+Modified : /Assignment2/ALU/main.twx
+Modified : /Assignment2/ALU/main.unroutes
+Modified : /Assignment2/ALU/main.vhd
+Modified : /Assignment2/ALU/main_guide.ncd
+Modified : /Assignment2/ALU/main_map.map
+Modified : /Assignment2/ALU/main_map.mrp
+Modified : /Assignment2/ALU/main_map.ncd
+Modified : /Assignment2/ALU/main_map.ngm
+Modified : /Assignment2/ALU/main_map.xrpt
+Modified : /Assignment2/ALU/main_ngdbuild.xrpt
+Modified : /Assignment2/ALU/main_pad.csv
+Modified : /Assignment2/ALU/main_pad.txt
+Modified : /Assignment2/ALU/main_par.xrpt
+Modified : /Assignment2/ALU/main_summary.html
+Modified : /Assignment2/ALU/main_summary.xml
+Modified : /Assignment2/ALU/main_usage.xml
+Modified : /Assignment2/ALU/main_xst.xrpt
+Modified : /Assignment2/ALU/usage_statistics_webtalk.html
+Modified : /Assignment2/ALU/webtalk.log
+Modified : /Assignment2/ALU/webtalk_pn.xml
+Modified : /Assignment2/ALU/xlnx_auto_0_xdb/cst.xbcd
+Modified : /Assignment2/ALU/xst/work/hdllib.ref
+Modified : /Assignment2/ALU/xst/work/hdpdeps.ref
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl08.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl09.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl12.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl13.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl16.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl17.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl30.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl31.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl36.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl37.vho
+
+Revision: 18
+Author: yyea
+Date: 16:59:41, 19 March 2014
+Message:
+solve the jump bug and program for the tasks.
+----
+Modified : /Assignment2/ALU/Assignment1.gise
+Modified : /Assignment2/ALU/PC.vhd
+Modified : /Assignment2/ALU/ROM.vhd
+Modified : /Assignment2/ALU/_ngo/netlist.lst
+Modified : /Assignment2/ALU/_xmsgs/par.xmsgs
+Modified : /Assignment2/ALU/_xmsgs/pn_parser.xmsgs
+Modified : /Assignment2/ALU/_xmsgs/xst.xmsgs
+Modified : /Assignment2/ALU/iseconfig/main.xreport
+Modified : /Assignment2/ALU/main.bgn
+Modified : /Assignment2/ALU/main.bit
+Modified : /Assignment2/ALU/main.bld
+Modified : /Assignment2/ALU/main.cmd_log
+Modified : /Assignment2/ALU/main.drc
+Modified : /Assignment2/ALU/main.ncd
+Modified : /Assignment2/ALU/main.ngc
+Modified : /Assignment2/ALU/main.ngd
+Modified : /Assignment2/ALU/main.ngr
+Modified : /Assignment2/ALU/main.pad
+Modified : /Assignment2/ALU/main.par
+Modified : /Assignment2/ALU/main.pcf
+Modified : /Assignment2/ALU/main.ptwx
+Modified : /Assignment2/ALU/main.syr
+Modified : /Assignment2/ALU/main.twr
+Modified : /Assignment2/ALU/main.twx
+Modified : /Assignment2/ALU/main.unroutes
+Modified : /Assignment2/ALU/main_envsettings.html
+Modified : /Assignment2/ALU/main_guide.ncd
+Modified : /Assignment2/ALU/main_map.map
+Modified : /Assignment2/ALU/main_map.mrp
+Modified : /Assignment2/ALU/main_map.ncd
+Modified : /Assignment2/ALU/main_map.ngm
+Modified : /Assignment2/ALU/main_map.xrpt
+Modified : /Assignment2/ALU/main_ngdbuild.xrpt
+Modified : /Assignment2/ALU/main_pad.csv
+Modified : /Assignment2/ALU/main_pad.txt
+Modified : /Assignment2/ALU/main_par.xrpt
+Modified : /Assignment2/ALU/main_summary.html
+Modified : /Assignment2/ALU/main_summary.xml
+Modified : /Assignment2/ALU/main_usage.xml
+Modified : /Assignment2/ALU/main_xst.xrpt
+Modified : /Assignment2/ALU/usage_statistics_webtalk.html
+Modified : /Assignment2/ALU/webtalk.log
+Modified : /Assignment2/ALU/webtalk_pn.xml
+Modified : /Assignment2/ALU/xlnx_auto_0_xdb/cst.xbcd
+Modified : /Assignment2/ALU/xst/work/hdllib.ref
+Modified : /Assignment2/ALU/xst/work/hdpdeps.ref
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl12.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl13.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl16.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl17.vho
+
+Revision: 17
+Author: yyea
+Date: 15:01:07, 18 March 2014
+Message:
+still debug for jump state
+----
+Modified : /Assignment2/ALU/Assignment1.gise
+Modified : /Assignment2/ALU/ControlUnit.vhd
+Modified : /Assignment2/ALU/Datapath1.vhd
+Modified : /Assignment2/ALU/JumpUnit.vhd
+Modified : /Assignment2/ALU/PC.vhd
+Modified : /Assignment2/ALU/ROM.vhd
+Modified : /Assignment2/ALU/_ngo/netlist.lst
+Modified : /Assignment2/ALU/_xmsgs/bitgen.xmsgs
+Modified : /Assignment2/ALU/_xmsgs/map.xmsgs
+Modified : /Assignment2/ALU/_xmsgs/par.xmsgs
+Modified : /Assignment2/ALU/_xmsgs/xst.xmsgs
+Modified : /Assignment2/ALU/iseconfig/Assignment1.projectmgr
+Modified : /Assignment2/ALU/iseconfig/main.xreport
+Modified : /Assignment2/ALU/main.bgn
+Modified : /Assignment2/ALU/main.bit
+Modified : /Assignment2/ALU/main.bld
+Modified : /Assignment2/ALU/main.cmd_log
+Modified : /Assignment2/ALU/main.drc
+Modified : /Assignment2/ALU/main.ncd
+Modified : /Assignment2/ALU/main.ngc
+Modified : /Assignment2/ALU/main.ngd
+Modified : /Assignment2/ALU/main.ngr
+Modified : /Assignment2/ALU/main.pad
+Modified : /Assignment2/ALU/main.par
+Modified : /Assignment2/ALU/main.pcf
+Modified : /Assignment2/ALU/main.ptwx
+Modified : /Assignment2/ALU/main.syr
+Modified : /Assignment2/ALU/main.twr
+Modified : /Assignment2/ALU/main.twx
+Modified : /Assignment2/ALU/main.unroutes
+Modified : /Assignment2/ALU/main_envsettings.html
+Modified : /Assignment2/ALU/main_guide.ncd
+Modified : /Assignment2/ALU/main_map.map
+Modified : /Assignment2/ALU/main_map.mrp
+Modified : /Assignment2/ALU/main_map.ncd
+Modified : /Assignment2/ALU/main_map.ngm
+Modified : /Assignment2/ALU/main_map.xrpt
+Modified : /Assignment2/ALU/main_ngdbuild.xrpt
+Modified : /Assignment2/ALU/main_pad.csv
+Modified : /Assignment2/ALU/main_pad.txt
+Modified : /Assignment2/ALU/main_par.xrpt
+Modified : /Assignment2/ALU/main_summary.html
+Modified : /Assignment2/ALU/main_summary.xml
+Modified : /Assignment2/ALU/main_usage.xml
+Modified : /Assignment2/ALU/main_xst.xrpt
+Modified : /Assignment2/ALU/usage_statistics_webtalk.html
+Modified : /Assignment2/ALU/webtalk.log
+Modified : /Assignment2/ALU/webtalk_pn.xml
+Modified : /Assignment2/ALU/xlnx_auto_0_xdb/cst.xbcd
+Modified : /Assignment2/ALU/xst/work/hdllib.ref
+Modified : /Assignment2/ALU/xst/work/hdpdeps.ref
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl12.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl13.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl16.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl17.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl20.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl21.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl32.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl33.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl36.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl37.vho
+
+Revision: 16
+Author: yyea
+Date: 07:27:40, 18 March 2014
+Message:
+debug the microprocessor
+----
+Modified : /Assignment2/ALU/ALU.vhd
+Modified : /Assignment2/ALU/Assignment1.gise
+Modified : /Assignment2/ALU/ControlUnit.vhd
+Modified : /Assignment2/ALU/DataInputUnit.vhd
+Modified : /Assignment2/ALU/Datapath.vhd
+Modified : /Assignment2/ALU/Datapath1.vhd
+Modified : /Assignment2/ALU/Datapath2.vhd
+Modified : /Assignment2/ALU/FF.vhd
+Modified : /Assignment2/ALU/IR.vhd
+Modified : /Assignment2/ALU/JumpUnit.vhd
+Modified : /Assignment2/ALU/NorGate.vhd
+Modified : /Assignment2/ALU/PC.vhd
+Modified : /Assignment2/ALU/PCincrement.vhd
+Modified : /Assignment2/ALU/RF.vhd
+Modified : /Assignment2/ALU/ROM.vhd
+Modified : /Assignment2/ALU/TriStateBuffer.vhd
+Modified : /Assignment2/ALU/_ngo/netlist.lst
+Modified : /Assignment2/ALU/_xmsgs/bitgen.xmsgs
+Modified : /Assignment2/ALU/_xmsgs/map.xmsgs
+Modified : /Assignment2/ALU/_xmsgs/par.xmsgs
+Modified : /Assignment2/ALU/_xmsgs/pn_parser.xmsgs
+Modified : /Assignment2/ALU/_xmsgs/xst.xmsgs
+Modified : /Assignment2/ALU/iseconfig/Assignment1.projectmgr
+Modified : /Assignment2/ALU/main.bgn
+Modified : /Assignment2/ALU/main.bit
+Modified : /Assignment2/ALU/main.bld
+Modified : /Assignment2/ALU/main.cmd_log
+Modified : /Assignment2/ALU/main.drc
+Modified : /Assignment2/ALU/main.ncd
+Modified : /Assignment2/ALU/main.ngc
+Modified : /Assignment2/ALU/main.ngd
+Modified : /Assignment2/ALU/main.ngr
+Modified : /Assignment2/ALU/main.pad
+Modified : /Assignment2/ALU/main.par
+Modified : /Assignment2/ALU/main.pcf
+Modified : /Assignment2/ALU/main.ptwx
+Added : /Assignment2/ALU/main.stx
+Modified : /Assignment2/ALU/main.syr
+Modified : /Assignment2/ALU/main.twr
+Modified : /Assignment2/ALU/main.twx
+Modified : /Assignment2/ALU/main.unroutes
+Modified : /Assignment2/ALU/main.vhd
+Modified : /Assignment2/ALU/main_bitgen.xwbt
+Modified : /Assignment2/ALU/main_envsettings.html
+Modified : /Assignment2/ALU/main_guide.ncd
+Modified : /Assignment2/ALU/main_map.map
+Modified : /Assignment2/ALU/main_map.mrp
+Modified : /Assignment2/ALU/main_map.ncd
+Modified : /Assignment2/ALU/main_map.ngm
+Modified : /Assignment2/ALU/main_map.xrpt
+Modified : /Assignment2/ALU/main_ngdbuild.xrpt
+Modified : /Assignment2/ALU/main_pad.csv
+Modified : /Assignment2/ALU/main_pad.txt
+Modified : /Assignment2/ALU/main_par.xrpt
+Modified : /Assignment2/ALU/main_summary.html
+Modified : /Assignment2/ALU/main_summary.xml
+Modified : /Assignment2/ALU/main_usage.xml
+Modified : /Assignment2/ALU/main_xst.xrpt
+Modified : /Assignment2/ALU/usage_statistics_webtalk.html
+Modified : /Assignment2/ALU/webtalk.log
+Modified : /Assignment2/ALU/webtalk_pn.xml
+Modified : /Assignment2/ALU/xlnx_auto_0_xdb/cst.xbcd
+Modified : /Assignment2/ALU/xst/work/hdllib.ref
+Modified : /Assignment2/ALU/xst/work/hdpdeps.ref
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl06.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl07.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl08.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl09.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl12.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl13.vho
+Modified : /Assignment2/ALU/xst/work/sub00/vhpl14.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl15.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl16.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl17.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl18.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl19.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl20.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl21.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl22.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl23.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl24.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl25.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl26.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl27.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl28.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl29.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl30.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl31.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl32.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl33.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl34.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl35.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl36.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl37.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl38.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl39.vho
+
+Revision: 15
+Author: yyea
+Date: 23:09:58, 17 March 2014
+Message:
+debug the whole program
+----
+Modified : /Assignment2/ALU/Assignment1.gise
+Modified : /Assignment2/ALU/Assignment1.xise
+Modified : /Assignment2/ALU/ControlUnit.vhd
+Modified : /Assignment2/ALU/FF.vhd
+Modified : /Assignment2/ALU/NorGate.vhd
+Modified : /Assignment2/ALU/PC.vhd
+Modified : /Assignment2/ALU/TriStateBuffer.vhd
+Modified : /Assignment2/ALU/_xmsgs/pn_parser.xmsgs
+Modified : /Assignment2/ALU/_xmsgs/xst.xmsgs
+Modified : /Assignment2/ALU/iseconfig/Assignment1.projectmgr
+Modified : /Assignment2/ALU/iseconfig/main.xreport
+Modified : /Assignment2/ALU/main.cmd_log
+Modified : /Assignment2/ALU/main.prj
+Deleted : /Assignment2/ALU/main.stx
+Modified : /Assignment2/ALU/main.syr
+Modified : /Assignment2/ALU/main.vhd
+Modified : /Assignment2/ALU/main_envsettings.html
+Modified : /Assignment2/ALU/main_summary.html
+Modified : /Assignment2/ALU/main_vhdl.prj
+Modified : /Assignment2/ALU/main_xst.xrpt
+Modified : /Assignment2/ALU/webtalk_pn.xml
+Modified : /Assignment2/ALU/xst/work/hdllib.ref
+Modified : /Assignment2/ALU/xst/work/hdpdeps.ref
+Added : /Assignment2/ALU/xst/work/sub00/vhpl12.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl13.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl14.vho
+
+Revision: 14
+Author: yyea
+Date: 05:31:07, 17 March 2014
+Message:
+combine controllunit and datapath in one main entity
+----
+Modified : /Assignment2/ALU/ControlUnit.vhd
+Added : /Assignment2/ALU/Datapath.vhd
+Modified : /Assignment2/ALU/Datapath2.vhd
+Modified : /Assignment2/ALU/_xmsgs/pn_parser.xmsgs
+Modified : /Assignment2/ALU/main.vhd
+
+Revision: 13
+Author: yyea
+Date: 04:43:10, 17 March 2014
+Message:
+finish the controll unit
+----
+Modified : /Assignment2/ALU/ControlUnit.vhd
+Modified : /Assignment2/ALU/_xmsgs/pn_parser.xmsgs
+Modified : /Assignment2/ALU/iseconfig/Assignment1.projectmgr
+Modified : /Assignment2/ALU/iseconfig/main.xreport
+Modified : /Assignment2/ALU/main_summary.html
+
+Revision: 12
+Author: yyea
+Date: 14:05:12, 13 March 2014
+Message:
+More or less finish combine the datapath 1,2 and start the control unit
+----
+Modified : /Assignment2/ALU/Assignment1.xise
+Added : /Assignment2/ALU/ControlUnit.vhd
+Modified : /Assignment2/ALU/DataInputUnit.vhd
+Modified : /Assignment2/ALU/Datapath1.vhd
+Modified : /Assignment2/ALU/Datapath2.vhd
+Modified : /Assignment2/ALU/JumpUnit.vhd
+Modified : /Assignment2/ALU/ROM.vhd
+Modified : /Assignment2/ALU/TriStateBuffer.vhd
+Modified : /Assignment2/ALU/_xmsgs/pn_parser.xmsgs
+Modified : /Assignment2/ALU/iseconfig/Assignment1.projectmgr
+Modified : /Assignment2/ALU/iseconfig/main.xreport
+Modified : /Assignment2/ALU/main_summary.html
+
+Revision: 11
+Author: yyea
+Date: 20:29:09, 12 March 2014
+Message:
+Combine the entities of datapath 1
+----
+Modified : /Assignment2/ALU/Datapath1.vhd
+Modified : /Assignment2/ALU/iseconfig/Assignment1.projectmgr
+Modified : /Assignment2/ALU/iseconfig/main.xreport
+Modified : /Assignment2/ALU/main_summary.html
+
+Revision: 10
+Author: yyea
+Date: 20:24:35, 12 March 2014
+Message:
+
+----
+Modified : /Assignment2/ALU/ALU.vhd
+Modified : /Assignment2/ALU/Assignment1.xise
+Added : /Assignment2/ALU/DataInputUnit.vhd
+Modified : /Assignment2/ALU/Datapath1.vhd
+Modified : /Assignment2/ALU/FF.vhd
+Added : /Assignment2/ALU/JumpUnit.vhd
+Added : /Assignment2/ALU/NorGate.vhd
+Modified : /Assignment2/ALU/PC.vhd
+Added : /Assignment2/ALU/PCincrement.vhd
+Modified : /Assignment2/ALU/RF.vhd
+Added : /Assignment2/ALU/TriStateBuffer.vhd
+Modified : /Assignment2/ALU/_xmsgs/pn_parser.xmsgs
+Modified : /Assignment2/ALU/iseconfig/Assignment1.projectmgr
+
+Revision: 9
+Author: yyea
+Date: 18:37:23, 12 March 2014
+Message:
+Fill the ROM, RF, FF, IR etc entities
+----
+Modified : /Assignment2/ALU/FF.vhd
+Modified : /Assignment2/ALU/IR.vhd
+Modified : /Assignment2/ALU/PC.vhd
+Modified : /Assignment2/ALU/RF.vhd
+Modified : /Assignment2/ALU/ROM.vhd
+Modified : /Assignment2/ALU/_xmsgs/pn_parser.xmsgs
+
+Revision: 8
+Author: yyea
+Date: 16:51:34, 12 March 2014
+Message:
+Work with initial datapath
+----
+Modified : /Assignment2/ALU/Assignment1.gise
+Modified : /Assignment2/ALU/Assignment1.xise
+Added : /Assignment2/ALU/Datapath1.vhd
+Added : /Assignment2/ALU/Datapath2.vhd
+Added : /Assignment2/ALU/FF.vhd
+Added : /Assignment2/ALU/IR.vhd
+Added : /Assignment2/ALU/PC.vhd
+Added : /Assignment2/ALU/RF.vhd
+Added : /Assignment2/ALU/ROM.vhd
+Modified : /Assignment2/ALU/_ngo/netlist.lst
+Modified : /Assignment2/ALU/_xmsgs/par.xmsgs
+Modified : /Assignment2/ALU/_xmsgs/pn_parser.xmsgs
+Modified : /Assignment2/ALU/_xmsgs/xst.xmsgs
+Modified : /Assignment2/ALU/iseconfig/Assignment1.projectmgr
+Modified : /Assignment2/ALU/iseconfig/main.xreport
+Modified : /Assignment2/ALU/main.bgn
+Modified : /Assignment2/ALU/main.bit
+Modified : /Assignment2/ALU/main.bld
+Modified : /Assignment2/ALU/main.cmd_log
+Modified : /Assignment2/ALU/main.drc
+Modified : /Assignment2/ALU/main.ncd
+Modified : /Assignment2/ALU/main.ngc
+Modified : /Assignment2/ALU/main.ngd
+Modified : /Assignment2/ALU/main.ngr
+Modified : /Assignment2/ALU/main.pad
+Modified : /Assignment2/ALU/main.par
+Modified : /Assignment2/ALU/main.pcf
+Modified : /Assignment2/ALU/main.syr
+Modified : /Assignment2/ALU/main.twr
+Modified : /Assignment2/ALU/main.twx
+Modified : /Assignment2/ALU/main.unroutes
+Modified : /Assignment2/ALU/main_guide.ncd
+Modified : /Assignment2/ALU/main_map.map
+Modified : /Assignment2/ALU/main_map.mrp
+Modified : /Assignment2/ALU/main_map.ncd
+Modified : /Assignment2/ALU/main_map.ngm
+Modified : /Assignment2/ALU/main_map.xrpt
+Modified : /Assignment2/ALU/main_ngdbuild.xrpt
+Modified : /Assignment2/ALU/main_pad.csv
+Modified : /Assignment2/ALU/main_pad.txt
+Modified : /Assignment2/ALU/main_par.xrpt
+Modified : /Assignment2/ALU/main_summary.html
+Modified : /Assignment2/ALU/main_summary.xml
+Modified : /Assignment2/ALU/main_usage.xml
+Modified : /Assignment2/ALU/main_xst.xrpt
+Modified : /Assignment2/ALU/usage_statistics_webtalk.html
+Modified : /Assignment2/ALU/webtalk.log
+Modified : /Assignment2/ALU/webtalk_pn.xml
+Modified : /Assignment2/ALU/xst/work/hdllib.ref
+Modified : /Assignment2/ALU/xst/work/hdpdeps.ref
+
+Revision: 7
+Author: yyea
+Date: 02:43:42, 28 February 2014
+Message:
+final comment and modify.
+----
+Modified : /Assignment2/ALU/ALU.vhd
+Modified : /Assignment2/ALU/Assignment1.xise
+Modified : /Assignment2/ALU/OP.vhd
+Modified : /Assignment2/ALU/four_digits_unit.vhd
+Modified : /Assignment2/ALU/main.vhd
+Modified : /Assignment2/ALU/one_digit.vhd
+Modified : /Assignment2/VGA/VGA.xise
+Modified : /Assignment2/VGA/disc.vhd
+Modified : /Assignment2/VGA/main.vhd
+
+Revision: 6
+Author: yyea
+Date: 02:41:50, 28 February 2014
+Message:
+totally finish the functions.
+----
+Added : /Assignment2/ALU
+Added : /Assignment2/ALU/ALU.vhd
+Added : /Assignment2/ALU/Assignment1.gise
+Added : /Assignment2/ALU/Assignment1.xise
+Added : /Assignment2/ALU/Display.vhd
+Added : /Assignment2/ALU/OP.vhd
+Added : /Assignment2/ALU/_ngo
+Added : /Assignment2/ALU/_ngo/netlist.lst
+Added : /Assignment2/ALU/_xmsgs
+Added : /Assignment2/ALU/_xmsgs/bitgen.xmsgs
+Added : /Assignment2/ALU/_xmsgs/map.xmsgs
+Added : /Assignment2/ALU/_xmsgs/ngdbuild.xmsgs
+Added : /Assignment2/ALU/_xmsgs/par.xmsgs
+Added : /Assignment2/ALU/_xmsgs/pn_parser.xmsgs
+Added : /Assignment2/ALU/_xmsgs/trce.xmsgs
+Added : /Assignment2/ALU/_xmsgs/xst.xmsgs
+Added : /Assignment2/ALU/four_digits_summary.html
+Added : /Assignment2/ALU/four_digits_unit.vhd
+Added : /Assignment2/ALU/iseconfig
+Added : /Assignment2/ALU/iseconfig/Assignment1.projectmgr
+Added : /Assignment2/ALU/iseconfig/four_digits.xreport
+Added : /Assignment2/ALU/iseconfig/main.xreport
+Added : /Assignment2/ALU/main.bgn
+Added : /Assignment2/ALU/main.bit
+Added : /Assignment2/ALU/main.bld
+Added : /Assignment2/ALU/main.cmd_log
+Added : /Assignment2/ALU/main.drc
+Added : /Assignment2/ALU/main.lso
+Added : /Assignment2/ALU/main.ncd
+Added : /Assignment2/ALU/main.ngc
+Added : /Assignment2/ALU/main.ngd
+Added : /Assignment2/ALU/main.ngr
+Added : /Assignment2/ALU/main.pad
+Added : /Assignment2/ALU/main.par
+Added : /Assignment2/ALU/main.pcf
+Added : /Assignment2/ALU/main.prj
+Added : /Assignment2/ALU/main.ptwx
+Added : /Assignment2/ALU/main.stx
+Added : /Assignment2/ALU/main.syr
+Added : /Assignment2/ALU/main.twr
+Added : /Assignment2/ALU/main.twx
+Added : /Assignment2/ALU/main.unroutes
+Added : /Assignment2/ALU/main.ut
+Added : /Assignment2/ALU/main.vhd
+Added : /Assignment2/ALU/main.xpi
+Added : /Assignment2/ALU/main.xst
+Added : /Assignment2/ALU/main_bitgen.xwbt
+Added : /Assignment2/ALU/main_envsettings.html
+Added : /Assignment2/ALU/main_guide.ncd
+Added : /Assignment2/ALU/main_map.map
+Added : /Assignment2/ALU/main_map.mrp
+Added : /Assignment2/ALU/main_map.ncd
+Added : /Assignment2/ALU/main_map.ngm
+Added : /Assignment2/ALU/main_map.xrpt
+Added : /Assignment2/ALU/main_ngdbuild.xrpt
+Added : /Assignment2/ALU/main_pad.csv
+Added : /Assignment2/ALU/main_pad.txt
+Added : /Assignment2/ALU/main_par.xrpt
+Added : /Assignment2/ALU/main_summary.html
+Added : /Assignment2/ALU/main_summary.xml
+Added : /Assignment2/ALU/main_usage.xml
+Added : /Assignment2/ALU/main_vhdl.prj
+Added : /Assignment2/ALU/main_xst.xrpt
+Added : /Assignment2/ALU/one_digit.vhd
+Added : /Assignment2/ALU/usage_statistics_webtalk.html
+Added : /Assignment2/ALU/webtalk.log
+Added : /Assignment2/ALU/webtalk_pn.xml
+Added : /Assignment2/ALU/xlnx_auto_0_xdb
+Added : /Assignment2/ALU/xlnx_auto_0_xdb/cst.xbcd
+Added : /Assignment2/ALU/xst
+Added : /Assignment2/ALU/xst/dump.xst
+Added : /Assignment2/ALU/xst/dump.xst/main.prj
+Added : /Assignment2/ALU/xst/dump.xst/main.prj/ngx
+Added : /Assignment2/ALU/xst/dump.xst/main.prj/ngx/notopt
+Added : /Assignment2/ALU/xst/dump.xst/main.prj/ngx/opt
+Added : /Assignment2/ALU/xst/file graph
+Added : /Assignment2/ALU/xst/projnav.tmp
+Added : /Assignment2/ALU/xst/work
+Added : /Assignment2/ALU/xst/work/hdllib.ref
+Added : /Assignment2/ALU/xst/work/hdpdeps.ref
+Added : /Assignment2/ALU/xst/work/sub00
+Added : /Assignment2/ALU/xst/work/sub00/vhpl00.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl01.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl02.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl03.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl04.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl05.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl06.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl07.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl08.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl09.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl10.vho
+Added : /Assignment2/ALU/xst/work/sub00/vhpl11.vho
+Added : /Assignment2/VGA/Triangle.vhd
+Added : /Assignment2/VGA/VGA.gise
+Added : /Assignment2/VGA/_ngo
+Added : /Assignment2/VGA/_ngo/netlist.lst
+Added : /Assignment2/VGA/_xmsgs
+Added : /Assignment2/VGA/_xmsgs/bitgen.xmsgs
+Added : /Assignment2/VGA/_xmsgs/map.xmsgs
+Added : /Assignment2/VGA/_xmsgs/ngdbuild.xmsgs
+Added : /Assignment2/VGA/_xmsgs/par.xmsgs
+Added : /Assignment2/VGA/_xmsgs/pn_parser.xmsgs
+Added : /Assignment2/VGA/_xmsgs/trce.xmsgs
+Added : /Assignment2/VGA/_xmsgs/xst.xmsgs
+Added : /Assignment2/VGA/iseconfig
+Added : /Assignment2/VGA/iseconfig/VGA.projectmgr
+Added : /Assignment2/VGA/iseconfig/main.xreport
+Added : /Assignment2/VGA/main.bgn
+Added : /Assignment2/VGA/main.bit
+Added : /Assignment2/VGA/main.bld
+Added : /Assignment2/VGA/main.cmd_log
+Added : /Assignment2/VGA/main.drc
+Added : /Assignment2/VGA/main.lso
+Added : /Assignment2/VGA/main.ncd
+Added : /Assignment2/VGA/main.ngc
+Added : /Assignment2/VGA/main.ngd
+Added : /Assignment2/VGA/main.ngr
+Added : /Assignment2/VGA/main.pad
+Added : /Assignment2/VGA/main.par
+Added : /Assignment2/VGA/main.pcf
+Added : /Assignment2/VGA/main.prj
+Added : /Assignment2/VGA/main.ptwx
+Added : /Assignment2/VGA/main.stx
+Added : /Assignment2/VGA/main.syr
+Added : /Assignment2/VGA/main.twr
+Added : /Assignment2/VGA/main.twx
+Added : /Assignment2/VGA/main.unroutes
+Added : /Assignment2/VGA/main.ut
+Added : /Assignment2/VGA/main.xpi
+Added : /Assignment2/VGA/main.xst
+Added : /Assignment2/VGA/main_bitgen.xwbt
+Added : /Assignment2/VGA/main_envsettings.html
+Added : /Assignment2/VGA/main_guide.ncd
+Added : /Assignment2/VGA/main_map.map
+Added : /Assignment2/VGA/main_map.mrp
+Added : /Assignment2/VGA/main_map.ncd
+Added : /Assignment2/VGA/main_map.ngm
+Added : /Assignment2/VGA/main_map.xrpt
+Added : /Assignment2/VGA/main_ngdbuild.xrpt
+Added : /Assignment2/VGA/main_pad.csv
+Added : /Assignment2/VGA/main_pad.txt
+Added : /Assignment2/VGA/main_par.xrpt
+Added : /Assignment2/VGA/main_summary.html
+Added : /Assignment2/VGA/main_summary.xml
+Added : /Assignment2/VGA/main_usage.xml
+Added : /Assignment2/VGA/main_vhdl.prj
+Added : /Assignment2/VGA/main_xst.xrpt
+Added : /Assignment2/VGA/rectangle.vhd
+Added : /Assignment2/VGA/usage_statistics_webtalk.html
+Added : /Assignment2/VGA/webtalk.log
+Added : /Assignment2/VGA/webtalk_pn.xml
+Added : /Assignment2/VGA/xlnx_auto_0_xdb
+Added : /Assignment2/VGA/xlnx_auto_0_xdb/cst.xbcd
+Added : /Assignment2/VGA/xst
+Added : /Assignment2/VGA/xst/dump.xst
+Added : /Assignment2/VGA/xst/dump.xst/main.prj
+Added : /Assignment2/VGA/xst/dump.xst/main.prj/ngx
+Added : /Assignment2/VGA/xst/dump.xst/main.prj/ngx/notopt
+Added : /Assignment2/VGA/xst/dump.xst/main.prj/ngx/opt
+Added : /Assignment2/VGA/xst/file graph
+Added : /Assignment2/VGA/xst/projnav.tmp
+Added : /Assignment2/VGA/xst/work
+Added : /Assignment2/VGA/xst/work/hdllib.ref
+Added : /Assignment2/VGA/xst/work/hdpdeps.ref
+Added : /Assignment2/VGA/xst/work/sub00
+Added : /Assignment2/VGA/xst/work/sub00/vhpl00.vho
+Added : /Assignment2/VGA/xst/work/sub00/vhpl01.vho
+Added : /Assignment2/VGA/xst/work/sub00/vhpl02.vho
+Added : /Assignment2/VGA/xst/work/sub00/vhpl03.vho
+Added : /Assignment2/VGA/xst/work/sub00/vhpl04.vho
+Added : /Assignment2/VGA/xst/work/sub00/vhpl05.vho
+Added : /Assignment2/VGA/xst/work/sub00/vhpl06.vho
+Added : /Assignment2/VGA/xst/work/sub00/vhpl07.vho
+Added : /Assignment2/VGA/xst/work/sub00/vhpl08.vho
+Added : /Assignment2/VGA/xst/work/sub00/vhpl09.vho
+Added : /Assignment2/VGA/xst/work/sub00/vhpl10.vho
+
