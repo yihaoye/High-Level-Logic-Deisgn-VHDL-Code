@@ -1,2 +1,3 @@
 # High-Level-Logic-Deisgn-VHDL-Code
-COMP869 assignment in University of Essex
+Some FPGA VHDL codes
+include CE869 assignment in University of Essex
